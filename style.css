@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #999;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #262626;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 35%;
+}
+
+.card {
+	width: 250px;
+	height: 420px;
+	background: rgba(51, 50, 50, 1);
+	border-radius: 10px;
+    padding: 15px;
+	box-sizing: border-box;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main i {
+	font-size: 60px;
+	margin-top: 5px;
+	color: #3291fc;
+}
+
+.main h4 {
+	font-size: 14px;
+	margin: 15px 0 0 0;
+	text-transform: uppercase;
+}
+
+.main p {
+	font-size: 12px;
+	margin: 5px 0 0 0;
+}
+
+.line {
+	background: #999;
+	height: 1px;
+	width: 250px;
+	margin-top: 25px;
+	margin-left: -15px;
+}
+
+.inform {
+	margin-top: 25px;
+}
+
+.inform-item:first-child {
+	margin-top: 0;
+}
+
+.inform-item {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	font-size: 12px;
+}
+
+.inform-item i {
+	width: 5%;
+}
+
+.inform-item p {
+	width: 80%;
+}
+
+.price {
+	margin-top: 25px;
+	width: 250px;
+	background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+	margin-left: -15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.price i {
+	font-size: 25px;
+	margin-top: -10px;
+}
+
+.price span {
+	font-size: 40px;
+}
+
+.btn {
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.choose {
+	font-size: 12px;
+	text-decoration: none;
+	border: 1px solid #999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 160px;
+	height: 40px;
+	border-radius: 50px;
+}
+
+.card:hover {
+	background: linear-gradient(45deg, rgba(50, 229, 252, .6), rgba(50, 145, 252, .6))
+}
+
+.card:hover * {
+	color: #fff;
+}
+
+.card:hover .choose {
+	border: 1px solid #fff;
+}
+
+.card:hover .line {
+	background: #fff;
+}
+
+.choose:hover {
+	background: #fff;
+	color: rgb(50, 145, 252);
+}

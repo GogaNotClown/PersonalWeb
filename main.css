@@ -46,14 +46,8 @@ body {
     color: rgb(0, 4, 255)
 }
 
-.name {
-    font-size: 25px;
-    line-height: 0;
-    padding-top: 20px;
-}
-
-.social {
-    color: #6A5ACD;
+.social-money {
+    color: #00ff62
 }
 
 .name {
