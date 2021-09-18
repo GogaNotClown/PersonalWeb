@@ -2,7 +2,7 @@
 
 ## По поводу проекта
 
-[![Product Name Screen Shot][product-screenshot]](https://ibb.co/WxBG9Lc)
+![alt tag](https://ibb.co/WxBG9Lc "Скрин сайта")
 
 Полностью обновил карточку, сделал её лучше... или хуже? Похуй
 
