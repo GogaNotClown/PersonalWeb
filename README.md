@@ -2,7 +2,7 @@
 
 ## По поводу проекта
 
-![ScreenShot](https://postimg.cc/bG8tW5ZK)
+![Screenshot](https://i.postimg.cc/s2G4QdsD/2021-09-18-102511.png)
 
 Полностью обновил карточку, сделал её лучше... или хуже? Похуй
 
