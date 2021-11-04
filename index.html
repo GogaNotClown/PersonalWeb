@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300;1,400;1,900&display=swap" rel="stylesheet">
+    <title>Sosat bidlo...</title>
+</head>
+
+<body>
+    <div class="intro">
+        <div class="video">
+            <video class="media" src="video/video.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <h1 class="title">sosat bidlo...</h1>
+                <br>
+                <audio id="audio" preload="" autoplay="" loop="">
+                    <source type="audio/mp3" src="mp3/music.mp3">
+                </audio>
+                <center>
+                    <div style="cursor: pointer; letter-spacing: 2px; font-size: 14px;" onclick="pVid();"><i style="color: white" class="fas fa-play"></i></div>
+
+                    <script>
+                        var audio = document.getElementById("audio");
+
+                        function pVid() {
+                            audio.paused ? audio.play() : audio.pause();
+                        }
+                    </script>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
