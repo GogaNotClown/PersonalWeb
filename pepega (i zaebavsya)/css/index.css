@@ -1,0 +1,56 @@
+ @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v11/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-WYi1UA.ttf) format('truetype');
+}
+
+.Desc {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Avatar {
+    width: 200px;
+    border: 5px solid #1e1e23;
+    box-shadow: 1px 1px 4px black;
+}
+
+.main {
+    margin-top: 40px !important;
+}
+
+.desc1 {
+    margin-top: 110px;
+}
+
+@media screen and (max-width: 992px) {
+    .mlogo {
+        width: 200px;
+        height: 175px;
+    }
+
+    .Desc {
+        color: white;
+        font-size: 15px;
+        margin: 15px;
+    }
+
+    .Avatar {
+        width: 170px
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .Avatar {
+        width: 150px
+    }
+
+    .Desc {
+        color: white;
+        font-size: 11px;
+        margin: 20px;
+    }
+}
