@@ -1,0 +1,77 @@
+body, html {
+  font-family: 'Rubik', sans-serif !important;
+  font-weight: 400;
+  background-color: black;
+}
+
+li {
+    display: inline;
+}
+
+.pizdec {
+  text-align: center;
+  max-width: 600px;
+  margin: 15px;
+  width: 100%;
+  padding: 20px 35px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #aea6a6;
+  border-radius: 4px;
+}
+.pizdec a {
+  color: white;
+  font-weight: 600;
+  transition: 0.15s;
+}
+.pizdec a:hover {
+  color: #a0a0a0;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.15s;
+}
+
+hr {
+    border-color: white;
+}
+
+.nav-link {
+  color: white;
+  transition: 0.15s;
+}
+
+.nav-item {
+  font-size: 18px; 
+  margin: 8px;
+}
+.nav-link:hover, .nav-link:active{
+  color: gray;
+  transition: 0.15s;
+}
+
+.footerAvatar {
+    border-radius: 100%;
+    margin-left: 170px;
+}
+.footerText {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    .pizdec {
+      width: 80%;
+      padding: 15px 25px;
+    }
+    
+    .footerAvatar {
+        width: 60px !important;
+        border-radius: 100%;
+        text-align: center;
+        margin-left: auto;
+    }
+    
+    .footerText {
+        font-size: 20px;
+    }
+}
