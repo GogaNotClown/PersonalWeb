@@ -1,0 +1,27 @@
+body {
+  background: #232323;
+  font-family: "Rubik", sans-serif !important;
+}
+
+h1 {
+  text-align: center;
+  color: gray;
+  font-size: 100px;
+}
+
+.prikol {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 180px;
+    }
+    
+    .prikol {
+        width: 150px;
+        height: 150px;
+    }
+}
