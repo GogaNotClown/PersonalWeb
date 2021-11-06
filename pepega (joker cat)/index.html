@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Igordos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300;1,400;1,900&display=swap" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <meta name="theme-color" content="#00ff00">
+    <link rel="icon" href="img/logo.png">
+    <meta property="og:title" content="Igordos">
+    <meta property="og:image" content="/img/logo.png">
+    <meta property="og:description" content="Мы живём в обществе...">
+    <meta property="og:color" content="#00ff00">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.simple.timer.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://www.meme-arsenal.com/memes/18b852e11c56dd2f0615fe477cbcb620.jpg" class="ахаха негры">
+        </div>
+        <br>
+        <br>
+        <div class="card">
+            <div class="timer" data-seconds-left=604800></div>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $('.timer').startTimer();
+        });
+    </script>
+</body>
+
+</html>
