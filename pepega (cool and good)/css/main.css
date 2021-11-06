@@ -1,0 +1,62 @@
+body {
+	min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+	background: linear-gradient(-30deg, #202f23, #232323);
+                animation: gradient 5s ease-in-out infinite;
+                background-size: 400% 400%;
+}
+    @keyframes gradient {
+                0% {
+                    background-position:0% 50%
+                }
+                
+                50% {
+                    background-position:100% 50%
+                }
+                
+                100% {
+                    background-position:0% 50%
+                }
+            }
+.card {
+    background-color: #fff;
+    font-family: monospace;
+    height: 250px;
+    width: 340px;
+    border-radius: 20px;
+}
+
+.content {
+    padding: 0 15px 0 25px;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo {
+    max-width: 150px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    margin-top: -50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.social {
+    color: rgb(0, 0, 0);
+}
+
+.name {
+    font-size: 25px;
+    line-height: 0;
+    padding-top: 5px;
+}

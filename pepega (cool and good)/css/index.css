@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v11/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-WYi1UA.ttf) format('truetype');
+}
+
+.Desc {
+  color: white;
+  font-size: 17px; 
+  font-weight: 400;
+}
+.Avatar {
+  width: 200px;
+  border: 5px solid #1e1e23;
+  box-shadow: 1px 1px 4px black;
+}
+.features {
+  width: 100%;
+  min-width: 400px;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+.features .title {
+  font-weight: 600;
+  font-size: 2.4em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.mlogo {
+  width: 200px;
+}
+.features h1 {
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.wrapper-1 {
+  display: inline-block;
+  align-items: center;
+  min-width: 400px;
+  height: 405px;
+  width: 400px;
+  margin: 10px;
+  transition-property: all;
+  border-radius: 5px;
+  position: relative;
+  background-color: #25252e;
+  padding-top: 15px;
+  box-shadow: 1px 1px 5px black;
+}
+
+.wrapper-1:hover {
+  background-color: #2c2d40;
+  transition: 0.6s;
+}
+
+.middle-text {
+  position: absolute;
+  top: 53%;
+  left: 53%;
+  transform: translate(-53%, -53%);
+  z-index: 10;
+  width: 100%;
+}
+.wrapper-1 p {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+}
+
+.ranks {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.main {
+  margin-top: 40px !important;
+}
+.desc1 {
+  margin-top: 110px;
+}
+@media screen and (max-width: 992px) {
+    .mlogo {
+      width: 170px;
+    }
+    
+    .wrapper-1 {
+        min-height: 475px;
+    }
+    
+  .middle-text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    z-index: 10;
+    width: 100%;
+  }
+    
+  .wrapper-1 {
+    display: inline-block;
+    align-items: center;
+    min-width: 220px;
+    height: 250px;
+    width: 310px;
+    margin: 15px;
+    transition-property: all;
+    border-radius: 5px;
+    background-color: #25252e;
+    box-shadow: 1px 1px 5px black;
+  }
+  .GameDesc {
+    color: white;
+    font-size: 15px;
+    margin: 15px;
+  }
+  .Avatar {
+    width: 170px
+  }
+  .features {
+    padding-top: 20px;
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .wrapper-1 p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+  }
+  .features .title {
+    font-size: 2.4em;
+  }
+}
+@media screen and (max-width: 361px) {
+  .wrapper-1 {
+    margin-top: 8px;
+    display: inline-block;
+    align-items: center;
+    min-width: 150px;
+    height: 200px;
+    width: 260px;
+    margin: 15px;
+    transition-property: all;
+    border-radius: 5px;
+    background-color: #25252e;
+    padding: 20px;
+    box-shadow: 1px 1px 5px black;
+    }
+  .Avatar {
+    width: 150px
+  }
+  .features {
+    text-align: center;
+    padding-top: 20px;
+    min-width: 150px;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .wrapper-1 p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+  }
+  .features .title {
+    font-size: 1.5em;
+  }
+  .features h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    margin: 10px;
+    padding-top: 15px;
+  }
+  .jeggybot {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .GameDesc {
+    color: white;
+    font-size: 11px;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .wrapper-1 {
+    margin-top: 8px;
+    display: inline-block;
+    align-items: center;
+    min-width: 150px;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    transition-property: all;
+    border-radius: 5px;
+    background-color: #25252e;
+    padding: 20px;
+    box-shadow: 1px 1px 5px black;
+  }
+}
