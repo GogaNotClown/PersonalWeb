@@ -36,51 +36,9 @@ body {
 }
 
 h3,
+h4,
 p {
     font-size: 20px;
     line-height: 20px;
     padding-top: 0px;
-}
-
-@-webkit-keyframes h4 {
-    50% {
-        background-size: 7px 7px, 3px 3px;
-    }
-
-    100% {
-        background-size: 3px 3px, 7px 7px;
-    }
-}
-
-@keyframes h4 {
-    50% {
-        background-size: 7px 7px, 3px 3px;
-    }
-
-    100% {
-        background-size: 3px 3px, 7px 7px;
-    }
-}
-
-h4 {
-    position: relative;
-    font-weight: bold;
-    color: #30084f;
-    font-size: 20px;
-    line-height: 20px;
-    padding-top: 0px;
-}
-
-h4:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(rgba(255, 255, 255, 1) 1px, rgba(255, 255, 255, 0) 1px), radial-gradient(rgba(255, 255, 255, 1) 1px, rgba(255, 255, 255, 0) 1px);
-    background-size: 3px 3px, 7px 7px;
-    background-position: 0% 50%;
-    -webkit-animation: flicker .5s linear infinite alternate;
-    animation: flicker .5s linear infinite alternate;
 }
