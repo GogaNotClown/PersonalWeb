@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #202020;
+    font-family: Montserrat, sans-serif;
+}
+
+/* Всё что связано с текстом */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
+.social {
+    color: black;
+}
+
+h3,
+h4,
+    {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 0px;
+}
+
+h6 {
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+/* Всё что связано с текстом */
+
+
+/* Навыки */
+.skills {
+    background-color: white;
+    text-align: left;
+    padding: 15px;
+}
+
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills ul li {
+    border: 1px solid #2D2747;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
+}
+
+/* Навыки */
+
+
+/* Анимация аватарки */
+.kruto {
+    animation: kruto 2.2s infinite;
+}
+
+@keyframes kruto {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Анимация аватарки */
+
+
+/* Карточка */
+.card {
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.content {
+    padding: 0 15px 0 25px;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo {
+    max-width: 150px;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-top: -50px;
+}
+
+/* Карточка */
