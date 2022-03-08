@@ -14,7 +14,7 @@
     <div class="card">
         <div class="content">
             <div class="up">
-                <img class="photo kruto" src="img/avatar.gif" alt="Аватарка" title="Аватарка">
+                <img class="photo kruto" src="img/main.gif" alt="Аватарка" title="Аватарка">
                 <p>
                     <a target="_blank" class="social" href="https://discord.com/api/oauth2/authorize?client_id=819263848955379813&permissions=414501948480&scope=bot%20applications.commands"><i class="fab fa-discord"></i></a>
                     <a target="_blank" class="social" href="https://rofl-here.glitch.me/"><i class="fas fa-globe"></i></a>
@@ -25,21 +25,36 @@
             </div>
             <h3>GogaNotClown</h3>
             <h6>Убийца клоунов 🤡</h6>
-            <p>Работаю на ОПГ <a target="_blank" href="https://github.com/pepegabot">PepegaDevs</a></p>
+            <p id="desc"></p>
             <h3>Изучаю:</h3>
             <div class="skills">
                 <ul>
-                    <li>Back End</li>
-                    <li>Front End</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Node</li>
+                    <li>Классика</li>
+                    <li>Орал</li>
+                    <li>Садо-мазо</li>
+                    <li>Лесбийский</li>
+                    <li>Коврики</li>
+                    <li>Корзинки</li>
                 </ul>
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        const text = [
+            "Ненавижу понедельники",
+            "Щас скопирую текст и вставлю, это так прикольно...",
+            "swag swag swag",
+            "ты понемаеш што своими действиями ты позореш дагестан",
+            "Люблю пятницу",
+            "В субботу отдыхаю",
+            "Люблю и ненавижу воскресенье"
+        ];
+
+        let DayOfWeek = new Date().getDay() - 1;
+        if (DayOfWeek === -1) DayOfWeek = 6;
+        document.getElementById("desc").innerText = text[DayOfWeek];
+
+    </script>
 </body>
 
 </html>
