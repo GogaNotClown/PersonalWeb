@@ -44,7 +44,6 @@ p {
 
 /* Всё что связано с текстом */
 
-
 /* Навыки */
 .skills {
     background-color: white;
@@ -95,7 +94,7 @@ p {
 /* Карточка */
 .card {
     background-color: white;
-    height: 400px;
+    height: 415px;
     width: 400px;
     border-radius: 20px;
 }
