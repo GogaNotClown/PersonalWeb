@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Анимация картинки */
+.animation {
+    animation: animation 2.2s infinite;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* Анимация картинки */
+
+
+/* Всё что связано с текстом */
+a {
+    text-decoration: underline;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+h3 {
+    font-size: 50px;
+    line-height: 20px;
+    color: white;
+    margin-top: 100px;
+}
+
+p {
+    font-size: 30px;
+    color: white;
+}
+/* Всё что связано с текстом */
+
+
+/* Карточка */
+.card {
+    background-color: #202020;
+    height: 430px;
+    width: 800px;
+    border-radius: 20px;
+    border: 5px solid white;
+}
+
+.content {
+    padding: 0 15px 0 25px;
+}
+
+.photo {
+    float: right;
+    max-height: 350px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Карточка */
+
+
+/* Оптимизация */
+
+/* Iphone XR */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 896px) {
+    .card {
+        height: auto;
+        width: auto;
+    }
+
+    h3 {
+        margin-top: 10px;
+    }
+}
+
+/* Iphone SE */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px) {
+    .card {
+        height: auto;
+        width: auto;
+    }
+
+    h3 {
+        margin-top: 10px;
+    }
+}
+
+/* Samsung Galaxy S8+ */
+@media only screen
+and (min-device-width: 360px)
+and (max-device-width: 740px) {
+    .card {
+        height: auto;
+        width: auto;
+    }
+
+    h3 {
+        margin-top: 10px;
+    }
+}
+
+/* Оптимизация */
