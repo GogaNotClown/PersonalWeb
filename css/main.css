@@ -57,10 +57,10 @@ p {
 }
 
 .skills ul li {
-    border: 1px solid #2D2747;
+    border: 1px solid black;
     border-radius: 2px;
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px;
     margin: 0 7px 7px 0;
     padding: 7px;
 }
