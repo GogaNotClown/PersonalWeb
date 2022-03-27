@@ -162,6 +162,10 @@ p {
         max-width: 115%;
         height: 180px;
     }
+	
+	.card {
+		width: 350px;
+	}
 }
 /* Media */
 
