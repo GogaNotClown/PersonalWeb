@@ -11,49 +11,47 @@
 </head>
 
 <body>
-    <div class="card">
-        <div class="content">
-            <div class="up">
-                <img class="photo" src="img/avatar.gif" alt="Аватарка" title="Аватарка">
-                <p>
-                    <a target="_blank" class="social" href="https://discord.com/api/oauth2/authorize?client_id=819263848955379813&permissions=414501948480&scope=bot%20applications.commands"><i class="fa-brands fa-discord"></i></a>
-                    <a target="_blank" class="social" href="https://rofl-here.glitch.me/"><i class="fa-solid fa-globe"></i></a>
-                    <a target="_blank" class="social" href="https://github.com/GogaNotClown"><i class="fa-brands fa-github"></i></a>
-                    <a target="_blank" class="social" href="https://adskii-drochila.glitch.me/"><i class="fa-solid fa-fire"></i></a>
-                </p>
-            </div>
-            <h3>GogaNotClown</h3>
-            <h6>Убийца клоунов 🤡</h6>
-            <p id="desc"></p>
-            <h3>Изучаю:</h3>
-            <div class="skills">
-                <ul>
-                    <li>Классика</li>
-                    <li>Орал</li>
-                    <li>Садо-мазо</li>
-                    <li>Лесбийский</li>
-                    <li>Коврики</li>
-                    <li>Корзинки</li>
-                </ul>
-            </div>
+<div class="card">
+    <div class="content">
+        <div class="background">
+            <img src="img/background%202.png" alt="Background" title="Background">
+        </div>
+        <div class="up">
+            <img class="photo" src="img/avatar.gif" alt="Avatar" title="Avatar">
+            <p>
+                <a rel="nofollow" target="_blank" class="social" href="#"><i class="fa-solid fa-question"></i></a>
+                <a rel="nofollow" target="_blank" class="social" href="#"><i class="fa-solid fa-question"></i></a>
+                <a rel="nofollow" target="_blank" class="social" href="#"><i class="fa-solid fa-question"></i></a>
+                <a rel="nofollow" target="_blank" class="social" href="#"><i class="fa-solid fa-question"></i></a>
+            </p>
+        </div>
+        <h3>GogaNotClown</h3>
+        <h4>Студент, "Live in 🎪"</h4>
+        <h4 id="desc"></h4>
+        <h4>Знаю и Изучаю:</h4>
+        <div class="skills">
+            <p>
+                <i class="fa-solid fa-check"></i> HTML CSS JS PYTHON<br>
+                <i class="fa-solid fa-question"></i> REACT SQL PHP
+            </p>
         </div>
     </div>
-    <script type="text/javascript">
-        const text = [
-            "Ненавижу понедельники",
-            "Щас скопирую текст и вставлю, это так прикольно...",
-            "swag swag swag",
-            "ты понемаеш што своими действиями ты позореш дагестан",
-            "Люблю пятницу",
-            "В субботу отдыхаю",
-            "Люблю и ненавижу воскресенье"
-        ];
+</div>
+<script type="text/javascript">
+    const text = [
+        "Сегодня Понедельник 😖",
+        "Сегодня Вторник 😏",
+        "Сегодня Среда 😌",
+        "Сегодня Четверг 😊",
+        "Сегодня Пятница 😜",
+        "Сегодня Суббота 😝",
+        "Сегодня Воскресенье 🥴"
+    ];
 
-        let DayOfWeek = new Date().getDay() - 1;
-        if (DayOfWeek === -1) DayOfWeek = 6;
-        document.getElementById("desc").innerText = text[DayOfWeek];
-
-    </script>
+    let DayOfWeek = new Date().getDay() - 1;
+    if (DayOfWeek === -1) DayOfWeek = 6;
+    document.getElementById("desc").innerText = text[DayOfWeek];
+</script>
 </body>
 
 </html>
