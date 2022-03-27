@@ -1,100 +1,98 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* Fonts */
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(../fonts/JetBrainsMono-Light.woff2) format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(../fonts/JetBrainsMono-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(../fonts/JetBrainsMono-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(../fonts/JetBrainsMono-SemiBold.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(../fonts/JetBrainsMono-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(../fonts/JetBrainsMono-ExtraBold.woff2) format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+/* Fonts */
+
+
+/* Main */
+::-webkit-scrollbar-button {
+    width: 10px;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+}
+
+::-webkit-resizer {
+    width: 10px;
+    height: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #202020;
-    font-family: Montserrat, sans-serif;
-}
-
-/* Всё что связано с текстом */
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: gray;
-}
-
-.social {
-    color: black;
-}
-
-h3,
-h4 {
-    font-size: 20px;
-    line-height: 20px;
-    padding-top: 0;
-}
-
-h6 {
-    margin: 5px 0;
-    text-transform: uppercase;
-    font-size: 13px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 21px;
-}
-
-/* Всё что связано с текстом */
-
-/* Навыки */
-.skills {
     background-color: white;
-    text-align: left;
-    padding: 15px;
+    font-family: "JetBrains Mono", sans-serif;
 }
-
-.skills ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.skills ul li {
-    border: 1px solid black;
-    border-radius: 2px;
-    display: inline-block;
-    font-size: 15px;
-    margin: 0 7px 7px 0;
-    padding: 7px;
-}
-
-/* Навыки */
+/* Main */
 
 
-/* Анимация аватарки */
-.kruto {
-    animation: kruto 2.2s infinite;
-}
-
-@keyframes kruto {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Анимация аватарки */
-
-
-/* Карточка */
+/* Card */
 .card {
-    background-color: white;
-    height: 415px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     border-radius: 20px;
 }
 
@@ -108,10 +106,62 @@ p {
 }
 
 .photo {
-    max-width: 150px;
-    border: 3px solid white;
+    width: 125px;
+    height: 125px;
+    border: 5px solid white;
     border-radius: 20px;
-    margin-top: -50px;
+    margin-top: -110px;
+    position: relative;
 }
 
-/* Карточка */
+.background img {
+    max-width: 150%;
+    height: 200px;
+    position: relative;
+    right: 40px;
+    border-radius: 20px;
+}
+/* Card */
+
+
+/* Text */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
+.social {
+    color: black;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+h6 {
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 21px;
+}
+/* Text */
+
+
+/* Media */
+@media screen and (max-width: 1024px){
+    .background img {
+        max-width: 115%;
+        height: 180px;
+    }
+}
+/* Media */
+
