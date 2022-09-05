@@ -1,0 +1,272 @@
+/* Main / Главное */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --not-black: #111111;
+    --black: #000000;
+    --background: #F8F7FC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "JetBrains Mono", monospace;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+body {
+    background: url("../img/background.svg") var(--background) no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1296px;
+    margin: auto;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Card / Карточка */
+.card {
+    margin-top: 250px;
+    background-color: var(--white);
+    width: 600px;
+    height: 378px;
+    border: 3px solid var(--not-black);
+}
+
+.card-up {
+    background-color: var(--not-black);
+    width: 595px;
+    height: 40px;
+}
+
+.card-up-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.up {
+    padding: 5px 8px;
+}
+
+.icon {
+    color: var(--white);
+    width: 25px;
+    height: 25px;
+}
+
+.card-up-title {
+    color: var(--white);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.circles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding-top: 10px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+.avatar {
+    width: 120px;
+    border: 3px solid black;
+}
+
+.about {
+    margin-left: 50px;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: var(--black);
+}
+
+.desc {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--black);
+    padding-bottom: 10px;
+}
+
+.yourself {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--black);
+}
+
+.flag {
+    width: 20px;
+}
+
+.social {
+    background: url("../img/social background.svg");
+    background-size: cover;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 15px 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.wrapper {
+    position: absolute;
+    overflow: hidden;
+    user-select: none;
+}
+
+/* Favorite Apps / Любимые приложения */
+.wrapper-app {
+    position: absolute;
+    overflow: hidden;
+    user-select: none;
+}
+
+.card-app {
+    margin: 500px 350px;
+    background-color: var(--white);
+    width: 650px;
+    height: 300px;
+    border: 3px solid var(--not-black);
+}
+
+.card-up-app {
+    background-color: var(--not-black);
+    width: 650px;
+    height: 40px;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 15px 15px;
+}
+
+.app {
+    width: 100px;
+    height: 100px;
+    grid-column: span 1;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.app-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--white);
+    padding-bottom: 4px;
+}
+
+.app-desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--white);
+    padding-bottom: 10px;
+}
+
+.app-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.spotify {
+    background-color: #1DB954;
+}
+
+.vk {
+    background-color: #81B1E8;
+}
+
+.tinkoff {
+    background-color: #EFD862;
+}
+
+.kinopoisk {
+    background-color: #FF5500;
+}
+
+.youtube {
+    background-color: #FF0000;
+}
+
+.twitch {
+    background-color: #C3A4F2;
+}
+
+/* Фотография / Photo */
+.wrapper-photo {
+    position: absolute;
+    overflow: hidden;
+    user-select: none;
+}
+
+.card-photo {
+    margin: 50px 800px;
+    background-color: var(--white);
+    width: 650px;
+    height: 800px;
+    border: 3px solid var(--not-black);
+}
+
+.card-up-photo {
+    background-color: var(--not-black);
+    width: 650px;
+}
+
+.photo {
+    width: 650px;
+    height: 800px;
+}
+
+/* Media / Адаптация */
+@media (max-width: 1200px) {
+    .mobile {
+        font-size: 50px;
+        background: none;
+        display: inline;
+    }
+
+    body {
+        background: none;
+    }
+
+    .container {
+        display: none;
+    }
+}
