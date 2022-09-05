@@ -10,11 +10,11 @@
     Здесь находится самый крутой способ, чтобы рассказать о себе и о том, что вы делаете.
     <br/>
     <br/>
-    <a href="https://github.com/GogaNotClown/PersonalWeb">Демо карточки</a>
+    <a href="https://web-personal.glitch.me/">Демо карточки</a>
     .
-    <a href="https://github.com/GogaNotClown/PersonalWeb/issues">Report Bug</a>
+    <a href="https://github.com/GogaNotClown/PersonalWeb/issues">Баг</a>
     .
-    <a href="https://github.com/GogaNotClown/PersonalWeb/pulls">Request Feature</a>
+    <a href="https://github.com/GogaNotClown/PersonalWeb/pulls">Идея</a>
   </p>
 
 ![Downloads](https://img.shields.io/github/downloads/GogaNotClown/PersonalWeb/total) ![Contributors](https://img.shields.io/github/contributors/GogaNotClown/PersonalWeb?color=dark-green) ![Stargazers](https://img.shields.io/github/stars/GogaNotClown/PersonalWeb?style=social) ![Issues](https://img.shields.io/github/issues/GogaNotClown/PersonalWeb) ![License](https://img.shields.io/github/license/GogaNotClown/PersonalWeb)
