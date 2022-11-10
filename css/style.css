@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Google Sans", sans-serif;
+}
+
+a {
+	all: unset;
+}
+
+body {
+	background-color: #1e1e1e;
+}
+
+.grey {
+	color: #b5b5b5;
+}
+
+.container {
+	max-width: 600px;
+	margin: 300px auto auto;
+}
+
+.container-card {
+	align-items: center;
+	display: flex;
+	padding: 35px 35px;
+	gap: 25px;
+}
+
+.info {
+	padding: 0 35px;
+}
+
+.personal {
+	display: flex;
+	flex-direction: column;
+}
+
+.hobby {
+	font-size: 13pt;
+	margin-top: 10px;
+	font-weight: 500;
+}
+
+.desc {
+	font-weight: 500;
+	font-size: 15pt;
+}
+
+.card {
+	position: relative;
+	width: 525px;
+	height: 300px;
+	background-color: #ffffff;
+	border-radius: 20px;
+}
+
+.card-social-block {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #3634fa;
+	border-radius: 0 16px 16px 0;
+	outline: none;
+	border: none;
+	height: 300px;
+	max-height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-social {
+	padding: 15px 15px;
+	color: #ffffff;
+	font-size: 16pt;
+	cursor: pointer;
+}
+
+i:hover {
+	transform: translateY(-0.25rem);
+	transition: 0.3s;
+}
+
+i:not(:hover) {
+	transition: 0.3s;
+}
+
+.avatar {
+	width: 130px;
+}
+
+.name {
+	font-size: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		margin: 175px auto auto;
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.card {
+		width: 475px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.container {
+		margin: 125px auto auto;
+		max-width: 300px;
+	}
+	
+	.container-card {
+		all: unset;
+		display: flex;
+		flex-direction: column;
+		padding: 25px 25px;
+	}
+	
+	.card {
+		width: 300px;
+		height: 400px;
+	}
+	
+	.personal {
+		margin-top: 20px;
+	}
+	
+	.name {
+		font-size: 20px;
+	}
+	
+	.card-social-block {
+		height: 400px;
+	}
+	
+	.info {
+		padding: 0 25px;
+	}
+	
+	.desc {
+		font-size: 13pt;
+		width: 200px;
+	}
+}
