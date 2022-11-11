@@ -105,6 +105,12 @@ i {
     font-size: 25px;
 }
 
+@media screen and (max-width: 1366px) {
+    .container {
+        margin: 175px auto auto;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .container {
         margin: 175px auto auto;
