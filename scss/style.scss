@@ -118,13 +118,7 @@ i {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .card {
-        width: 475px;
-    }
-}
-
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 576px) {
     .container {
         margin: 125px auto auto;
         max-width: 300px;
