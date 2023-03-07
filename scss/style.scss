@@ -1,6 +1,6 @@
 $white: #FFFFFF;
 $black: #000000;
-$not_black: #1E1E1E;
+$background: #1E1E1E;
 $grey: #B5B5B5;
 $family: 'Google Sans', sans-serif;
 $blue: #3634FA;
@@ -17,7 +17,7 @@ a {
 }
 
 body {
-    background-color: $not_black;
+    background-color: $background;
 }
 
 .grey {
