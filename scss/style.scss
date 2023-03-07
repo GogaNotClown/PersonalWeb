@@ -20,7 +20,7 @@ body {
     background-color: $background;
 }
 
-.grey {
+.card__personal-grey {
     color: $grey;
 }
 
@@ -29,29 +29,29 @@ body {
     margin: 300px auto auto;
 }
 
-.container-card {
+.card__container {
     align-items: center;
     display: flex;
     padding: 35px 35px;
     gap: 25px;
 }
 
-.info {
+.card__info {
     padding: 0 35px;
 }
 
-.personal {
+.card__personal {
     display: flex;
     flex-direction: column;
 }
 
-.hobby {
+.card__personal-hobby {
     font-size: 13pt;
     margin-top: 10px;
     font-weight: 500;
 }
 
-.desc {
+.card__personal-desc {
     font-weight: 500;
     font-size: 15pt;
 }
@@ -64,7 +64,7 @@ body {
     border-radius: 20px;
 }
 
-.card-social-block {
+.card__social-block {
     position: absolute;
     right: 0;
     top: 0;
@@ -80,7 +80,7 @@ body {
     justify-content: center;
 }
 
-.card-social {
+.card__social-elem {
     padding: 15px 15px;
     color: $white;
     font-size: 16pt;
@@ -97,11 +97,11 @@ i {
     }
 }
 
-.avatar {
+.card__avatar {
     width: 130px;
 }
 
-.name {
+.card__personal-name {
     font-size: 25px;
 }
 
@@ -124,7 +124,7 @@ i {
         max-width: 300px;
     }
 
-    .container-card {
+    .card__container {
         all: unset;
         display: flex;
         flex-direction: column;
@@ -136,23 +136,23 @@ i {
         height: 400px;
     }
 
-    .personal {
+    .card__personal {
         margin-top: 20px;
     }
 
-    .name {
+    .card__personal-name {
         font-size: 20px;
     }
 
-    .card-social-block {
+    .card__social-block {
         height: 400px;
     }
 
-    .info {
+    .card__info {
         padding: 0 25px;
     }
 
-    .desc {
+    .card__personal-desc {
         font-size: 13pt;
         width: 200px;
     }
