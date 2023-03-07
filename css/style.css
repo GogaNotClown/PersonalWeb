@@ -1,8 +1,17 @@
+:root {
+	--white: #FFFFFF;
+	--black: #000000;
+	--background: #1E1E1E;
+	--grey: #B5B5B5;
+	--family: 'Google Sans', sans-serif;
+	--purple: #3634FA;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Google Sans", sans-serif;
+	font-family: var(--family);
 }
 
 a {
@@ -10,11 +19,11 @@ a {
 }
 
 body {
-	background-color: #1e1e1e;
+	background-color: var(--background);
 }
 
 .grey {
-	color: #b5b5b5;
+	color: var(--grey);
 }
 
 .container {
@@ -53,7 +62,7 @@ body {
 	position: relative;
 	width: 525px;
 	height: 300px;
-	background-color: #ffffff;
+	background-color: var(--white);
 	border-radius: 20px;
 }
 
@@ -61,7 +70,7 @@ body {
 	position: absolute;
 	right: 0;
 	top: 0;
-	background-color: #3634fa;
+	background-color: var(--purple);
 	border-radius: 0 16px 16px 0;
 	outline: none;
 	border: none;
@@ -75,7 +84,7 @@ body {
 
 .card-social {
 	padding: 15px 15px;
-	color: #ffffff;
+	color: var(--white);
 	font-size: 18pt;
 	cursor: pointer;
 }
