@@ -100,6 +100,8 @@ i:not(:hover) {
 
 .card__avatar {
 	width: 130px;
+        height: 106px;
+        border-radius: 20px;
 }
 
 .card__personal-name {
