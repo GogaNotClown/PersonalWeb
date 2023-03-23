@@ -1,162 +1,327 @@
 :root {
-	--white: #FFFFFF;
-	--black: #000000;
-	--background: #1E1E1E;
-	--grey: #B5B5B5;
-	--family: 'Google Sans', sans-serif;
-	--purple: #3634FA;
+    --white: #FFFFFF;
+    --black: #000000;
+    --background: #1E1E1E;
+    --grey: #B5B5B5;
+    --family: 'Google Sans', sans-serif;
+    --purple: #3634FA;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: var(--family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--family);
 }
 
 a {
-	all: unset;
+    all: unset;
 }
 
 body {
-	background-color: var(--background);
+    background-color: var(--background);
 }
 
 .card__personal-grey {
-	color: var(--grey);
+    color: var(--grey);
 }
 
 .container {
-	max-width: 600px;
-	margin: 300px auto auto;
+    max-width: 600px;
+    margin: 185px auto auto;
 }
 
 .card__container {
-	align-items: center;
-	display: flex;
-	padding: 35px 35px;
-	gap: 25px;
+    align-items: center;
+    display: flex;
+    padding: 35px 35px;
+    gap: 25px;
 }
 
 .card__info {
-	padding: 0 35px;
+    padding: 0 35px;
 }
 
 .card__personal {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .card__personal-hobby {
-	font-size: 13pt;
-	margin-top: 10px;
-	font-weight: 500;
+    font-size: 13pt;
+    margin-top: 10px;
+    font-weight: 500;
 }
 
 .card__personal-desc {
-	font-weight: 500;
-	font-size: 15pt;
+    font-weight: 500;
+    font-size: 15pt;
 }
 
 .card {
-	position: relative;
-	width: 525px;
-	height: 300px;
-	background-color: var(--white);
-	border-radius: 20px;
+    position: relative;
+    width: 525px;
+    height: 300px;
+    background-color: var(--white);
+    border-radius: 20px;
 }
 
 .card__social-block {
-	position: absolute;
-	right: 0;
-	top: 0;
-	background-color: var(--purple);
-	border-radius: 0 16px 16px 0;
-	outline: none;
-	border: none;
-	height: 300px;
-	max-height: 500px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--purple);
+    border-radius: 0 16px 16px 0;
+    outline: none;
+    border: none;
+    height: 300px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card__social-elem {
-	padding: 15px 15px;
-	color: var(--white);
-	font-size: 18pt;
-	cursor: pointer;
-}
-
-i:hover {
-	transform: translateY(-0.25rem);
-	transition: 0.3s;
-}
-
-i:not(:hover) {
-	transition: 0.3s;
+    padding: 15px 15px;
+    color: var(--white);
+    font-size: 18pt;
+    cursor: pointer;
 }
 
 .card__avatar {
-	width: 130px;
-        height: 130px;
-        border-radius: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
 }
 
 .card__personal-name {
-	font-size: 25px;
+    font-size: 25px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup__content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: popup .5s;
+}
+
+.popup__icon {
+    font-size: 2.50rem;
+}
+
+.popup__title {
+    max-width: 250px;
+    margin: 20px auto 20px;
+}
+
+.popup__desc {
+    max-width: 300px;
+    margin: 0 auto 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#close-btn {
+    background-color: var(--purple);
+    color: var(--white);
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes popup-close {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 525px;
+    margin-bottom: 50px;
+}
+
+.track img {
+    width: 75px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.track .info {
+    flex-grow: 1;
+}
+
+.track .title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.track .author {
+    font-size: 16px;
+    margin: 5px 0 0 0;
+    color: #666;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.35rem;
+}
+
+.track .restart {
+    margin-right: 15px;
+}
+
+.track .volume-up, .track .volume-down {
+    margin-left: 15px;
 }
 
 @media screen and (max-width: 1366px) {
-	.container {
-		margin: 175px auto auto;
-	}
+    .container {
+        margin: 175px auto auto;
+    }
 }
 
 @media screen and (max-width: 1200px) {
-	.container {
-		margin: 175px auto auto;
-		max-width: 500px;
-	}
+    .container {
+        margin: 175px auto auto;
+        max-width: 500px;
+    }
 }
 
 @media screen and (max-width: 576px) {
-	.container {
-		margin: 125px auto auto;
-		max-width: 300px;
-	}
+    .container {
+        margin: 125px auto auto;
+        max-width: 300px;
+    }
 
-	.card__container {
-		all: unset;
-		display: flex;
-		flex-direction: column;
-		padding: 25px 25px;
-	}
+    .card__container {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 25px;
+    }
 
-	.card {
-		width: 300px;
-		height: 400px;
-	}
+    .card {
+        width: 300px;
+        height: 400px;
+    }
 
-	.card__personal {
-		margin-top: 20px;
-	}
+    .card__personal {
+        margin-top: 20px;
+    }
 
-	.card__personal-name {
-		font-size: 20px;
-	}
+    .card__personal-name {
+        font-size: 20px;
+    }
 
-	.card__social-block {
-		height: 400px;
-	}
+    .card__social-block {
+        height: 400px;
+    }
 
-	.card__info {
-		padding: 0 25px;
-	}
+    .card__info {
+        padding: 0 25px;
+    }
 
-	.card__personal-desc {
-		font-size: 13pt;
-		width: 200px;
-	}
+    .card__personal-desc {
+        font-size: 13pt;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .track {
+        width: 100%;
+    }
+
+    .track img {
+        width: 50px;
+    }
+
+    .track .title {
+        font-size: 20px;
+    }
+
+    .track .author {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .track {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .track img {
+        margin-bottom: 10px;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .track .info {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .track .title {
+        font-size: 18px;
+    }
+
+    .track .author {
+        font-size: 12px;
+    }
+
+    .button {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .track .restart {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
