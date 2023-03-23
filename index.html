@@ -8,14 +8,32 @@
     <title>Personal Web</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/font.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="icon" href="img/logo.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="container">
+    <div id="popup" class="popup">
+        <div class="popup__content">
+            <p class="popup__icon">🎂</p>
+            <h2 class="popup__title">Сайт больше не будет обновляться</h2>
+            <p class="popup__desc">Но не стоит расстраиваться, мы ещё увидимся с вами в других проектах!</p>
+            <button id="close-btn">Закрыть</button>
+        </div>
+    </div>
+    <div class="track">
+        <img src="img/avatars/first.svg" alt="Cover image">
+        <div class="info">
+            <h3 class="title">Just Music</h3>
+            <p class="author">Cat Michael</p>
+        </div>
+        <button class="restart button"><i class="ri-restart-fill"></i></button>
+        <button class="play button"><i class="ri-play-mini-fill"></i></button>
+        <audio id="audio" src="audio.mp3"></audio>
+    </div>
     <div class="card">
         <div class="card__container">
-            <img src="img/avatar.svg" alt="Avatar" class="card__avatar">
+            <img id="avatar" src="" alt="Avatar" class="card__avatar">
             <div class="card__personal">
                 <h3 class="card__personal-name">Goga<span class="card__personal-grey">Not</span>Clown</h3>
                 <p class="card__personal-hobby">Увлекаюсь чем-то, <br> сам ещё не понял</p>
@@ -24,22 +42,22 @@
             <div class="card__social-block">
                 <div class="card__social-elem">
                     <a target="_blank" href="https://github.com/GogaNotClown">
-                        <i title="Github" class="fa-brands fa-github"></i>
+                        <i class="ri-github-fill" title="Github"></i>
                     </a>
                 </div>
                 <div class="card__social-elem">
                     <a target="_blank" href="https://steamcommunity.com/id/snezanastripclub/">
-                        <i title="Steam" class="fa-brands fa-steam"></i>
+                        <i class="ri-steam-fill" title="Steam"></i>
                     </a>
                 </div>
                 <div class="card__social-elem">
                     <a target="_blank" href="https://discordapp.com/users/455023141756993537/">
-                        <i title="Discord" class="fa-brands fa-discord"></i>
+                        <i class="ri-discord-fill" title="Discord"></i>
                     </a>
                 </div>
                 <div class="card__social-elem">
                     <a target="_blank" href="https://twitter.com/furryporn">
-                        <i title="Twitter" class="fa-brands fa-twitter"></i>
+                        <i class="ri-twitter-fill" title="Twitter"></i>
                     </a>
                 </div>
             </div>
@@ -48,6 +66,10 @@
             <p class="card__personal-desc">Мы с ребятами флэксим и кайфуем <br> нормально отжигаем и не кринжуем</p>
         </div>
     </div>
+    <div id="bubbles"></div>
 </div>
+<script src="js/music.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
