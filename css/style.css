@@ -28,7 +28,7 @@ body {
 
 .container {
     max-width: 600px;
-    margin: 185px auto auto;
+    margin: 125px auto auto;
 }
 
 .card__container {
@@ -219,6 +219,10 @@ body {
     margin-left: 15px;
 }
 
+.button__container {
+    display: flex;
+}
+
 @media screen and (max-width: 1366px) {
     .container {
         margin: 175px auto auto;
@@ -315,13 +319,17 @@ body {
         font-size: 12px;
     }
 
-    .button {
-        font-size: 1.2rem;
-        padding: 8px;
-    }
-
     .track .restart {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    .button {
+        height: 35px;
+        margin-top: 15px;
+    }
+
+    .button__container {
+        gap: 15px;
     }
 }
